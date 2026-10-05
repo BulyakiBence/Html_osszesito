@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szegedi kirándulás</title>
+</head>
+
+<body>
+    <h1>Szegedi kirándulás</h1>
+    <h2>Rövid ismertető</h2>
+    <p>Az osztály kirándulást szervez Szegedre. A kirándulás költsége 15 000 Ft/fő,
+        amely tartalmazza az utazást, a szállást és a belépőjegyeket.
+        <br>A kirándulás időpontja: 2026. október 16., péntek. Gyülekező az iskola udvarán <strong>6:30</strong>,
+        indulás <strong>6:45</strong>, a hazhaérkezés <strong>kb. 18:00</strong>.
+        <br>Kíésrő tanár: <em></em>Kovács Anna</em>, elérhetősége: <a
+            href="mailto:anna.kovacs@iskola.hu">anna.kovacs@iskola.hu</a>
+    </p>
+    <blockquote>
+        <p> <strong>"Veni vidi vici"</strong></p>
+        <footer>
+            <italic> - Julius Caesar</italic>
+        </footer>
+    </blockquote>
+
+    <h2>Program</h2>
+    <ol>
+        <li>Utazás Szegedre</li>
+        <li>Dóm tér és a Fogadalmi templom</li>
+        <li>Móra Ferenc Múzeum
+            <ul>
+                <li>Állandó kiállítás</li>
+                <li>Időszaki kiállítás</li>
+            </ul>
+        </li>
+        <li>Ebéd a belvárosban</li>
+        <li>Hazautazás</li>
+    </ol>
+
+    <h2>Mit hozzanak a diákok?</h2>
+    <ul>
+        <li>Étel és ital a napra</li>
+        <li>Kényelmes cipő</li>
+        <li>Esőkabát</li>
+        <li>Fényképezőgép</li>
+    </ul>
+
+    <h2>Tudnivalók</h2>
+    <ul>
+        <li>Gyülekező</li>
+        <li>Indulás</li>
+        <li>Kisérő tanár: <a href="mailto:anna.kovacs@iskola.hu">Kovács Anna</a></li>
+    </ul>
+
+    <p>Kérjük, a részletek elolvasása után töltse ki a <a href="#jelentkezes">jelentkezési űrlapot</a>!</p>
+    <p>Kérdés esetén forduljon hozzánk bizalommal: <a href="mailto:anna.kovacs@iskola.hu">anna.kovacs@iskola.hu</a></p>
+    <p>További információk a városról <a href="https://hu.wikipedia.org/wiki/Szeged">Szeged Wikipédia-oldalára</a>
+        kattintva érhetők el.</p>
+
+
+    <img src="kepek\image.png"
+        alt="A szegedi Fogadalmi Templom esti kivilágításban, előtte a téren egy nagy Szeged felirat." width="350">
+    <table>
+        <thead>
+            <tr>
+                <th>Tétel</th>
+                <th>Ár</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Utazás</td>
+                <td>2500 Ft</td>
+            </tr>
+            <tr>
+                <td>Belépő</td>
+                <td>1800 Ft</td>
+            </tr>
+            <tr>
+                <td>Ebéd</td>
+                <td>2200 Ft</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Összesen: 6500 Ft</td>
+            </tr>
+            </tbody>
+    </table>
+
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Jelentkezési űrlap</legend>
+            <p>
+                <label for="nev">Név:</label>
+                <input type="text" id="nev" name="nev" required placeholder="Kovács Béla">
+            </p>
+            <p>
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" required placeholder="kovacs.bela@iskola.hu">
+            </p>
+            <p>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+36 30 123 4567">
+            </p>
+            <p>
+                <label for="fok">Hány fővel jössz:</label>
+                <input type="text" id="fok" name="fok" required placeholder="2" minlength="1" maxlength="4">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Melyik buszra ülsz?</legend>
+
+            <p>
+                <input type="radio" id="busz-a" name="busz" value="a_busz" checked>
+                <label for="busz-a">„A” jelű autóbusz</label>
+            </p>
+
+            <p>
+                <input type="radio" id="busz-b" name="busz" value="b_busz">
+                <label for="busz-b">„B” jelű autóbusz</label>
+            </p>
+        </fieldset>
+    </form>
+
+    <p>&copy; 2026 Bulyáki Bence </p>
+</body>
+
+</html>
