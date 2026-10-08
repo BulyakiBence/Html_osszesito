@@ -124,6 +124,42 @@
                 <label for="busz-b">„B” jelű autóbusz</label>
             </p>
         </fieldset>
+        <fieldset>
+        <label for="etkezes">Étkezés:</label>
+        <select id="etkezes" name="etkezes" required>
+            <option value="">-- válassz --</option>
+            <option value="husos">húsos menü</option>
+            <option value="vegán">vegetáriánus menü</option>
+            <option value="sajat">hozok magamnak ételt</option>
+        </select>
+        </fieldset>
+        <fieldset>
+    <legend><strong>Extra program (több is választható):</strong></legend>
+
+    <!-- Első opció -->
+    <input type="checkbox" id="program-var" name="extra_programok[]" value="varlatogatas">
+    <label for="program-var">várlátogatás</label>
+    <br><br> <!-- Sortörések, hogy a következő opció új sorba kerüljön, kis távolsággal -->
+
+    <!-- Második opció -->
+    <input type="checkbox" id="program-hajo" name="extra_programok[]" value="setahajo">
+    <label for="program-hajo">sétahajózás a Tiszán</label>
+    <br><br>
+
+    <!-- Megjegyzés rész: a label után azonnal törünk egy sort, hogy a textarea alá kerüljön -->
+    <label for="megjegyzes"><strong>Megjegyzés:</strong></label>
+    <br>
+    <textarea id="megjegyzes" name="megjegyzes" rows="4" cols="40"></textarea>
+    <br><br>
+
+    <!-- Szülői beleegyezés -->
+    <input type="checkbox" id="szuloi-belegyezes" name="szuloi_belegyezes" value="igen" required>
+    <label for="szuloi-belegyezes">A szülő tud a kirándulásról.</label>
+    <br><br>
+
+    <!-- Gomb -->
+    <button type="submit">Jelentkezem</button>
+</fieldset>
     </form>
 
     <p>&copy; 2026 Bulyáki Bence </p>
